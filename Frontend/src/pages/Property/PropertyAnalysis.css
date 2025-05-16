@@ -1,0 +1,71 @@
+/*PropertyAnalysis.css*/
+
+.analysis-wrapper {
+  padding: 2rem;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+}
+
+.analysis-card {
+  margin-bottom: 2rem;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.analysis-results {
+  margin-bottom: 2rem;
+}
+
+.forecast-chart {
+  margin-bottom: 2rem;
+}
+
+.related-news .ant-card-inner {
+  background-color: #fafafa;
+  border: 1px solid #d9d9d9;
+}
+
+.analysis-loading,
+.analysis-error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+}
+
+.analysis-error {
+  font-size: 1.2rem;
+  color: #ff4d4f;
+}
+
+
+.analysis-section {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.analysis-results {
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.forecast-chart, .price-forecast, .related-news {
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.forecast-chart img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.related-news .ant-card {
+  margin-bottom: 16px;
+}
+

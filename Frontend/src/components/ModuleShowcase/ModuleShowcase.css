@@ -1,0 +1,284 @@
+.module-showcase {
+  padding: 6rem 0;
+  background-color: #f9fafb;
+  position: relative;
+  overflow: hidden;
+}
+
+.module-showcase::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: radial-gradient(#7c3aed15 1.5px, transparent 1.5px);
+  background-size: 30px 30px;
+  z-index: 0;
+}
+
+/* Section Header */
+.section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  position: relative;
+  z-index: 1;
+}
+
+.badge-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.section-badge {
+  background-color: rgba(124, 58, 237, 0.1);
+  color: #7c3aed;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  display: inline-block;
+}
+
+.section-title {
+  font-size: 2.5rem !important;
+  font-weight: 700 !important;
+  color: #111827;
+  margin-bottom: 1rem !important;
+}
+
+.section-subtitle {
+  color: #6b7280;
+  max-width: 700px;
+  margin: 0 auto !important;
+  font-size: 1.125rem !important;
+}
+
+/* Module Tabs */
+.module-tabs-wrapper {
+  background-color: white;
+  border-radius: 16px !important;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05) !important;
+  overflow: hidden;
+  margin-bottom: 3rem;
+  position: relative;
+  z-index: 1;
+}
+
+.module-tabs {
+  min-height: 72px;
+}
+
+.module-tab {
+  font-weight: 600 !important;
+  text-transform: none !important;
+  font-size: 0.9rem !important;
+  min-height: 72px !important;
+  color: #6b7280 !important;
+  transition: all 0.3s ease !important;
+}
+
+.module-tab.Mui-selected {
+  color: #7c3aed !important;
+  background-color: rgba(124, 58, 237, 0.05);
+}
+
+.module-tab .MuiSvgIcon-root {
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem !important;
+  color: inherit;
+}
+
+/* Module Content */
+.module-content {
+  position: relative;
+  z-index: 1;
+  padding: 2rem 0;
+}
+
+.module-info {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.module-title {
+  font-size: 2.25rem !important;
+  font-weight: 700 !important;
+  color: #111827;
+  margin-bottom: 1.5rem !important;
+  position: relative;
+}
+
+.module-title::after {
+  content: '';
+  position: absolute;
+  bottom: -12px;
+  left: 0;
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #7c3aed, #1d4ed8);
+  border-radius: 4px;
+}
+
+.module-description {
+  color: #4b5563;
+  font-size: 1.1rem !important;
+  line-height: 1.7 !important;
+  margin-bottom: 2rem !important;
+}
+
+.feature-list {
+  margin-bottom: 2.5rem;
+}
+
+.feature-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.feature-bullet {
+  min-width: 8px;
+  height: 8px;
+  background-color: #7c3aed;
+  border-radius: 50%;
+  margin-top: 6px;
+  margin-right: 12px;
+}
+
+.explore-button {
+  background: linear-gradient(90deg, #1d4ed8, #2563eb) !important;
+  color: white !important;
+  padding: 0.75rem 2rem !important;
+  border-radius: 10px !important;
+  font-weight: 600 !important;
+  text-transform: none !important;
+  font-size: 1rem !important;
+  box-shadow: 0 8px 20px rgba(29, 78, 216, 0.2) !important;
+  transition: all 0.3s ease !important;
+  align-self: flex-start;
+}
+
+.explore-button:hover {
+  background: linear-gradient(90deg, #1e40af, #1d4ed8) !important;
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(29, 78, 216, 0.25) !important;
+}
+
+/* Module Image */
+.module-image-container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.module-image-wrapper {
+  width: 100%;
+  border-radius: 16px !important;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1) !important;
+  aspect-ratio: 16/9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+
+.module-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.module-image-wrapper:hover .module-image {
+  transform: scale(1.02);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 960px) {
+  .module-showcase {
+    padding: 4rem 0;
+  }
+
+  .section-title {
+    font-size: 2rem !important;
+  }
+
+  .module-tab {
+    font-size: 0.8rem !important;
+    padding: 0 8px !important;
+  }
+
+  .module-title {
+    font-size: 1.75rem !important;
+    text-align: center;
+  }
+
+  .module-title::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .module-description {
+    text-align: center;
+  }
+
+  .feature-list {
+    max-width: 400px;
+    margin: 0 auto 2rem;
+  }
+
+  .explore-button {
+    margin: 0 auto;
+    align-self: center;
+  }
+
+  .module-image-container {
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .module-showcase {
+    padding: 3rem 0;
+  }
+
+  .section-badge {
+    font-size: 0.7rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  .section-title {
+    font-size: 1.75rem !important;
+  }
+
+  .section-subtitle {
+    font-size: 1rem !important;
+  }
+
+  .module-tabs {
+    min-height: 60px;
+  }
+
+  .module-tab {
+    min-height: 60px !important;
+    font-size: 0.7rem !important;
+  }
+
+  .module-tab .MuiSvgIcon-root {
+    font-size: 1.25rem !important;
+    margin-bottom: 0.25rem;
+  }
+
+  .module-title {
+    font-size: 1.5rem !important;
+  }
+
+  .module-description {
+    font-size: 1rem !important;
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "gbr__learning_rate": 0.01978096273749798,
+  "gbr__max_depth": 7,
+  "gbr__max_features": 0.5,
+  "gbr__min_samples_split": 2,
+  "gbr__n_estimators": 484,
+  "gbr__subsample": 0.695824756266789
+}

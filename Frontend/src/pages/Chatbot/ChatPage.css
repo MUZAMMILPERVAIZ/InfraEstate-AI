@@ -1,0 +1,152 @@
+/* Main Chat Page Layout */
+.infra-chat-page {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 80px); /* Account for header */
+    background-color: #ffffff;
+    position: relative;
+    margin-top: 80px;
+    overflow: hidden;
+}
+
+.infra-chat-container {
+    display: flex;
+    flex: 1;
+    height: 100%;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+    margin: 0 16px 16px;
+}
+
+.infra-chat-main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease;
+    background-color: #ffffff;
+    border-radius: 0 12px 12px 0;
+}
+
+/* Gradient background accent */
+.infra-chat-page::before {
+    content: '';
+    position: absolute;
+    top: -80px;
+    left: 0;
+    right: 0;
+    height: 240px;
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.05) 0%, rgba(16, 185, 129, 0.05) 100%);
+    z-index: -1;
+}
+
+/* Mobile sidebar toggle button */
+.sidebar-toggle {
+    display: none;
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-color: #3b82f6;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
+    z-index: 100;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.sidebar-toggle:hover {
+    background-color: #2563eb;
+    transform: scale(1.05);
+}
+
+/* For medium screens */
+@media (max-width: 1024px) {
+    .infra-chat-container {
+        margin: 0 8px 8px;
+    }
+}
+
+/* For smaller screens */
+@media (max-width: 768px) {
+    .infra-chat-container {
+        flex-direction: column;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .infra-chat-main {
+        border-radius: 0;
+    }
+
+    .sidebar-toggle {
+        display: flex;
+    }
+
+    .infra-chat-page {
+        height: calc(100vh - 64px); /* Smaller header on mobile */
+        margin-top: 64px;
+    }
+}
+
+/* Custom scrollbar styling */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #d1d5db;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #9ca3af;
+}
+
+/* Base Typography */
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        transform: translateY(10px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Transitions */
+* {
+    transition: background-color 0.15s ease,
+    border-color 0.15s ease,
+    transform 0.15s ease,
+    box-shadow 0.15s ease,
+    opacity 0.15s ease;
+}

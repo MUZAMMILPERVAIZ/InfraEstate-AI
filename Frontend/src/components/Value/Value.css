@@ -1,0 +1,134 @@
+/* Section Styling */
+.value-section {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+}
+
+.value-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Left Image Section */
+.value-left .image-container {
+  width: 100%;
+  max-width: 500px;
+}
+
+.value-left .value-image {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Right Text Section */
+.value-right {
+  flex: 1;
+}
+
+.highlight-text {
+  font-size: 18px;
+  color: #ff7a00;
+  font-weight: bold;
+}
+
+.main-heading {
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.description-text {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Accordion Styling */
+.accordion {
+  width: 100%;
+}
+
+.accordion-item {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    background-color: #f7f7f7; /* Light background for the items */
+}
+
+
+
+
+.accordion-item.expanded {
+    border: 1px solid #4066ff;
+    box-shadow: 0 4px 12px rgba(64, 102, 255, 0.2); /* Accent color */
+    background-color: #ffffff;
+}
+
+.accordion-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.accordion-button:hover {
+    background-color: #f9f9f9;
+    transform: scale(1.02); /* Slight scaling effect */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.accordion-heading {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.dropdown-icon {
+  color: #888;
+}
+
+.accordion-text {
+  padding: 15px 20px;
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .value-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .value-left,
+  .value-right {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .accordion-text {
+    text-align: left;
+  }
+}

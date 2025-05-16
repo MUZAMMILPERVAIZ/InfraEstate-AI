@@ -1,0 +1,50 @@
+.settings-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 55vh;
+    background: linear-gradient(135deg, #f0f2f5, #d9e2ec);
+    padding: 20px;
+}
+
+.settings-card {
+    max-width: 700px;
+    width: 100%;
+    padding: 30px;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+.settings-card .ant-form-item-label > label {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.settings-card .ant-input {
+    height: 40px;
+    font-size: 14px;
+}
+
+.settings-card .ant-btn-primary {
+    background: #1890ff;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.settings-loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .settings-card {
+        max-width: 90%;
+    }
+}
