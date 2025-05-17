@@ -1,2 +1,3 @@
 Frontend/node_modules
 Backend/faiss_index_bot-*
+Backend/.env

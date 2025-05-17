@@ -18,7 +18,7 @@ from pydantic import BaseModel
 ImageFile.LOAD_TRUNCATED_IMAGES = True
 
 # Initialize your Gemini client
-API_KEY = "AIzaSyDyEAbUVOMtgkKED_sd1f0V8tc_0-wwdA0"
+API_KEY = "..."
 client = genai.Client(api_key=API_KEY)
 
 # Define your design preferences
@@ -129,7 +129,7 @@ def generate_3d_image_function(prompt: str, reference_image: Image.Image) -> Ima
     Returns the generated PIL Image.
     """
 
-    API_KEY = "AIzaSyCG7jZ-H0kkPXgPHZFecOPxFGCM9Muw8EI"
+    API_KEY = "..."
     g_client = genai.Client(api_key=API_KEY)
 
 
@@ -492,7 +492,7 @@ def generate_interior_prompts(floorplan_path: Image.Image, preference_key: str) 
 
 
 
-    API_KEY = "AIzaSyCTbx4-RhAzSZIH-LLiXdnDOVUiDYPCEAc"
+    API_KEY = "..."
     interior_client = genai.Client(api_key=API_KEY)
 
 

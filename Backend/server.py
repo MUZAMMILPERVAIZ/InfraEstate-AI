@@ -908,7 +908,7 @@ bedrock_llm = ChatBedrock(
 
 from langchain_google_genai import ChatGoogleGenerativeAI
 
-os.environ["GOOGLE_API_KEY"] = "AIzaSyDyEAbUVOMtgkKED_sd1f0V8tc_0-wwdA0"
+os.environ["GOOGLE_API_KEY"] = "..."
 
 llm = ChatGoogleGenerativeAI(
     model="gemini-2.0-flash-exp-image-generation",
@@ -2259,7 +2259,7 @@ from google.genai.types import Tool, GenerateContentConfig, GoogleSearch
 def generate(query):
     try:
         client_g = genai.Client(
-            api_key="AIzaSyCG7jZ-H0kkPXgPHZFecOPxFGCM9Muw8EI"
+            api_key="..."
         )
 
         model = "gemini-2.0-flash-exp-image-generation"
